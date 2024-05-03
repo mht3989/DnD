@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Paladin Sacred Oaths form TCE</name>
+		<description>The new Sacred Oath for Paladin class from the Tasha's Cauldron of Everything</description>
+		<author url="https://dnd.wizards.com/it/products/tashas-cauldron-everything">Wizards of the Coast</author>
+		<update version="0.0.0">
+			<file name="paladin_TCE.xml" url="https://absent/" />
+		</update>
+	</info>
+	
+<!-- Sacred Oath: Oath of Glory -->
+	<element name="Oath of Glory" type="Archetype" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_PALADIN_OATH_OF_GLORY">
+		<supports>Sacred Oath</supports>
+		<description>
+			<p>Paladins who take the Oath of Glory believe they and their companions are destined to achieve glory through deeds of heroism. They train diligently and encourage their companions so they're all ready when destiny calls.</p>
+			<h5 class="caption">TENET OF GLORY</h5>
+			<p>The tenets of the Oath of Glory drive a paladin to attempt heroics that might one day shine in legend.</p>
+			<p class="indent"><strong>Actions over Words.</strong> Strive to be known by glorious deeds, not words.</p>
+			<p class="indent"><strong>Challenges Are but Tests.</strong> Face hardships with courage, and encourage your allies to face them with you.</p>
+			<p class="indent"><strong>Hone the Body.</strong> Like raw stone, your body must be worked so its potential can be realized.</p>
+			<p class="indent"><strong>Discipline the Soul.</strong> You must marshal the discipline to overcome failings within yourself that threaten to dim the glory of you and your friends.</p>
+			<h5 class="caption">OAHT OF GLORY SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Paladin Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>guiding bolt, heroism</em></td></tr>
+				<tr><td>5th</td><td><em>enhance ability, magic weapon</em></td></tr>
+				<tr><td>9th</td><td><em>haste, protection form energy</em></td></tr>
+				<tr><td>13th</td><td><em>compulsion, freedom of movement</em></td></tr>
+				<tr><td>17th</td><td><em>commune, flame strike</em></td></tr>
+			</table>
+			<div element="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_CD_OATH_OF_GLORY" />
+			<div element="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_OATH_OF_GLORY_AURA_OF_ALACRITY" />
+			<div element="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_OATH_OF_GLORY_GLORIOUS_DEFENCE" />
+			<div element="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_OATH_OF_GLORY_LIVING_LEGEND" />
+		</description>
+		<sheet display="false">
+			<description><p>Paladins who take the Oath of Glory believe they and their companions are destined to achieve glory through deeds of heroism. They train diligently and encourage their companions so they're all ready when destiny calls.</p></description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_GUIDING_BOLT" level="3" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HEROISM" level="3" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_ENHANCE_ABILITY" level="5" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MAGIC_WEAPON" level="5" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HASTE" level="9" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_PROTECTION_FROM_ENERGY" level="9" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_COMPULSION" level="13" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" level="13" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_COMMUNE" level="17" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_FLAME_STRIKE" level="17" spellcasting="Paladin" prepared="true" />
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_CD_OATH_OF_GLORY" level="3"/>
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_OATH_OF_GLORY_AURA_OF_ALACRITY" level="7"/>
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_OATH_OF_GLORY_GLORIOUS_DEFENCE" level="15"/>
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_OATH_OF_GLORY_LIVING_LEGEND" level="20"/>
+		</rules>
+	</element>
+	<element name="Channel Divinity" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_CD_OATH_OF_GLORY">
+		<description>
+			<p><em>3rd-level Oath of Glory feature</em></p>
+			<p>You gain the following two Channel Divinity options. See the Sacred Oath class feature for how Channel Divinity works.</p>
+			<p class="indent"><strong>Peerless Athlete:</strong> As a bonus action, you can use your Channel Divinity to augment your athleticism. For the next 10 minutes, you have advantage on Strength (Athletics) and Dexterity (Acrobatics) checks; you can carry, push, drag, and lift twice as much weight as normal; and the distance of your long and high jumps increases by 10 feet (this extra distance costs movement as normal).</p>
+			<p class="indent"><strong>Inspiring Smite:</strong>Immediately after you deal damage to a creature with your Divine Smite feature, you can use your Channel Divinity as a bonus action and distribute temporary hit points to creatures of your choice within 30 feet of you, which can include you. The total number of temporary hit points equals 2d8 + your level in this class, divided among the chosen creatures however you like.</p>
+		</description>
+		<sheet>
+			<description>:</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_CD_OATH_OF_GLORY_PEERLESS_ATHLETE" />
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_CD_OATH_OF_GLORY_INSPIRING_SMITE" />
+		</rules>
+	</element>
+	<element name="Aura of Alacricy" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_OATH_OF_GLORY_AURA_OF_ALACRITY">
+		<description>
+			<p><em>7th-level Oath of Glory feature</em></p>
+			<p>You emanate an aura that fills you and your companions with supernatural speed, allowing you to race across a battlefield in formation. Your walking speed increases by 10 feet. In addition, if you aren't incapacitated, the walking speed of any ally who starts their turn within 5 feet of you increases by 10 feet until the end of that turn.</p>
+			<p class="indent">When you reach 18th level in this class, the range of the aura increases to 10 feet.</p>
+		</description>
+		<sheet>
+			<description level="7">Your walking speed increases by 10 feet. In addition, if you aren't incapacitated, the walking speed of any ally who starts their turn within 5 feet of you increases by 10 feet until the end of that turn</description>	
+			<description level="18">Your walking speed increases by 10 feet. In addition, if you aren't incapacitated, the walking speed of any ally who starts their turn within 15 feet of you increases by 10 feet until the end of that turn</description>
+		</sheet>
+	</element>
+	<element name="Glorious Defence" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_OATH_OF_GLORY_GLORIOUS_DEFENCE">
+		<description>
+			<p><em>15th-level Oath of Glory feature</em></p>
+			<p>You can turn defense into a sudden strike. When you or another creature you can see within 10 feet of you is hit by an attack roll, you can use your reaction to grant a bonus to the target's AC against that attack, potentially causing it to miss. The bonus equals your Charisma modifier (minimum of +l). If the attack misses, you can make one weapon attack against the attacker as part of this reaction, provided the attacker is within your weapon's range.</p>
+			<p class="indent">You can use this feature a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet action="Reaction" usage=" {{glorious_defence}}/long rest">
+			<description>When you or a creature you can see within 10ft from you is hit by an attack roll, you can grant an +{{glorious_defence}} AC bonus to the target. If the attack misses due to the bonus, you can make one weapon attack against the attacker, provided that it is in your weapon range.</description>
+		</sheet>
+		<rules>
+			<stat name="glorious_defence" value="1" bonus="base" />
+			<stat name="glorious_defence" value="charisma:modifier" bonus="base"/>
+		</rules>
+	</element>	
+	<element name="Living Legend" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_OATH_OF_GLORY_LIVING_LEGEND">
+		<description>
+			<p><em>20th-level Oath of Glory feature</em></p>
+			<p>You can empower yourself with the legendswhether true or exaggerated-of your great deeds. As a bonus action, you gain the following benefits for 1 minute:</p>
+			<ul>
+				<li>You are blessed with an otherworldly presence, gaining advantage on all Charisma checks.</li>
+				<li>Once on each of your turns when you make a weapon attack and miss, you can cause that attack to hit instead.</li>
+				<li>If you fail a saving throw, you can use your reaction to reroll it. You must use this new roll.</li>
+			</ul>
+			<p class="indent">Once you use this bonus action, you can't use it again until you finish a long rest, unless you expend a 5th-level spell slot to use it again.</p>
+		</description>
+		<sheet action="Bonus action" usage="1/long rest OR 5th-level spell slot">
+			<description>You gain the following benefits for 1 minute:
+				• You gain advantage on CHA checks
+				• Onche per turn, when you miss with an attack, you hit instead.
+				• If you fail a saving throw, you can use your reaction to reroll.
+			</description>
+		</sheet>
+		<rules>
+			<stat name="glorious_defence" value="1" bonus="base" />
+			<stat name="glorious_defence" value="charisma:modifier" bonus="base"/>
+		</rules>
+	</element>	
+
+<!-- Channel divinity: Oath of Glory -->
+	<element name="Peerless Athlete" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_CD_OATH_OF_GLORY_PEERLESS_ATHLETE">
+		<description>
+			<p><em>Oath of Glory Channel Divinity</em></p>
+			<p>As a bonus action, you can use your Channel Divinity to augment your athleticism. For the next 10 minutes, you have advantage on Strength (Athletics) and Dexterity (Acrobatics) checks; you can carry, push, drag, and lift twice as much weight as normal; and the distance of your long and high jumps increases by 10 feet (this extra distance costs movement as normal).</p></description>
+		<sheet action="Bonus action">
+			<description>Use a Channel Divinity and for the next 10 minutes you have advangage on Strength (Athletics) and Dexterity (Acrobatics) checks. Moreover you can handle twice the weight as normal and your jump increase of 10ft.</description>
+		</sheet>		
+	</element>
+	<element name="Inspiring Smite" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_CD_OATH_OF_GLORY_INSPIRING_SMITE">
+		<description>
+			<p><em>Oath of Glory Channel Divinity</em></p>
+			<p>Immediately after you deal damage to a creature with your Divine Smite feature, you can use your Channel Divinity as a bonus action and distribute temporary hit points to creatures of your choice within 30 feet of you, which can include you. The total number of temporary hit points equals 2d8 + your level in this class, divided among the chosen creatures however you like.</p></description>
+		<sheet action="Bonus action">
+			<description>Immediately after you deal damage with your Divine Smite, you can use a Channel Divinity to give a total of 2d8+LVL temporary HP to creatures of your choice within 30ft of you, divided as you like.</description>
+		</sheet>		
+	</element>
+
+<!-- Sacred Oath: Oath of the Watchers -->
+	<element name="Oath of the Watchers" type="Archetype" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_PALADIN_OATH_OF_THE_WATCHERS">
+		<supports>Sacred Oath</supports>
+		<description>
+			<p>The Oath of the Watchers binds paladins to protect mortal realms from the predations of extraplanar creatures, many of which can lay waste to mortal soldiers. Thus, the Watchers hone their minds, spirits, and bodies to be the ultimate weapons against such threats.</p>
+			<p class="indent">Paladins who follow the Watchers' oath are ever vigilant in spotting the influence of extraplanar forces, often establishing a network of spies and informants to gather information on suspected cults. To a Watcher, keeping a healthy suspicion and awareness about one's surroundings is as natural as wearing armor in battle.</p>			
+			<h5 class="caption">TENET OF THE WATCHERS</h5>
+			<p>A paladin who assumes the Oath of the Watchers swears to safeguard mortal realms from otherworldly threats.</p>
+			<p class="indent"><strong>Vigilance.</strong> The threats you face are cunning, powerful, and subversive. Be ever alert for their corruption.</p>
+			<p class="indent"><strong>Loyalty.</strong> Never accept gifts or favors from fiends or those who truck with them. Stay true to your order, your comrades, and your duty.</p>
+			<p class="indent"><strong>Discipline.</strong> You are the shield against the endless terrors that lie beyond the stars. Your blade must be forever sharp and your mind keen to survive what lies beyond.</p>
+			<h5 class="caption">OAHT OF THE WATCHERS' SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Paladin Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>alarm, detect magic</em></td></tr>
+				<tr><td>5th</td><td><em>moonbeam, see invisibility</em></td></tr>
+				<tr><td>9th</td><td><em>counterspell, nondetection</em></td></tr>
+				<tr><td>13th</td><td><em>aura of purity, banishment</em></td></tr>
+				<tr><td>17th</td><td><em>hold monster, scrying</em></td></tr>
+			</table>
+			<div element="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_CD_OATH_OF_THE_WATCHERS" />
+			<div element="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_WATCHERS_AURA_OF_THE_SENTINEL" />
+			<div element="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_WATCHERS_VIGILANT_REBUKE" />
+			<div element="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_WATCHERS_MORTAL_BULWARK" />
+		</description>
+		<sheet display="false">
+			<description><p>Paladins who follow the Watchers' oath are ever vigilant in spotting the influence of extraplanar forces, often establishing a network of spies and informants to gather information on suspected cults. To a Watcher, keeping a healthy suspicion and awareness about one's surroundings is as natural as wearing armor in battle.</p></description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_ALARM" level="3" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DETECT_MAGIC" level="3" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MOONBEAM" level="5" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SEE_INVISIBILITY" level="5" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_COUNTERSPELL" level="9" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_NONDETECTION" level="9" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_AURA_OF_PURITY" level="13" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BANISHMENT" level="13" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HOLD_MONSTER" level="17" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SCRYING" level="17" spellcasting="Paladin" prepared="true" />
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_CD_OATH_OF_THE_WATCHERS" level="3"/>
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_WATCHERS_AURA_OF_THE_SENTINEL" level="7"/>
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_WATCHERS_VIGILANT_REBUKE" level="15"/>
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_WATCHERS_MORTAL_BULWARK" level="20"/>
+		</rules>
+	</element>
+	<element name="Channel Divinity" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_CD_OATH_OF_THE_WATCHERS">
+		<description>
+			<p><em>3rd-level Oath of the Watchers' feature</em></p>
+			<p>You gain the following Channel Divinity options. See the Sacred Oath class feature for how Channel Divinity works.</p>
+			<p class="indent"><strong>Watcher's Will:</strong> You can use your Channel Divinity to invest your presence with the warding power of your faith. As an action, you can choose a number of creatures you can see within 30 feet of you, up to a number equal to your Charisma modifier (minimum of one creature). For 1 minute, you and the chosen creatures have advantage on Intelligence, Wisdom, and Charisma saving throws.</p>
+			<p class="indent"><strong>Abjure the Extraplanar:</strong>You can use your Channel Divinity to castigate unworldly beings. As an action, you present your holy symbol and each aberration, celestial, elemental, fey, or fiend within 30 feet of you that can hear you must make a Wisdom saving throw. On a failed save, the creature is turned for 1 minute or until it takes damage. A turned creature must spend its turns trying to  move as far away from you as it can, and it can't willingly end its move in a space within 30 feet of you. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can take the Dodge action.</p>
+		</description>
+		<sheet>
+			<description>:</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_CD_OATH_OF_THE_WATCHERS_WATCHERS_WILL" />
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_CD_OATH_OF_THE_WATCHERS_ABJURE_THE_EXTRAPLANAR" />
+		</rules>
+	</element>
+	<element name="Aura of the Sentinel" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_WATCHERS_AURA_OF_THE_SENTINEL">
+		<description>
+			<p><em>7th-level Oath of the Watchers' feature</em></p>
+			<p>You emit an aura of alertness while you aren't incapacitated. When you and any creatures of your choice within 10 feet of you roll initiative, you all gain a bonus to initiative equal to your proficiency bonus.</p>
+			<p class="indent">At 18th level, the range of this aura increases to 30 feet.</p>
+		</description>
+		<sheet>
+			<description level="7">You and any creature of your choice within 10ft form you gain a +{{proficiency}} bonus on initiative roll</description>
+			<description level="18">You and any creature of your choice within 30ft form you gain a +{{proficiency}} bonus on initiative roll</description>
+		</sheet>
+	</element>
+	<element name="Vigilant Rebuke" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_WATCHERS_VIGILANT_REBUKE">
+		<description>
+			<p><em>15th-level Oath of the Watchers' feature</em></p>
+			<p>You've learned how to chastise anyone who dares wield beguilements against you and your wards. Whenever you or a creature you can see within 30 feet of you succeeds on an Intelligence, a Wisdom, or a Charisma saving throw, you can use your reaction to deal 2d8 + your Charisma modifier force damage to the creature that forced the saving throw.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>Wenever you or a creature you can see within 30ft form you succeeds on an INT, WIS or CHA sawing throw, you can deal 2d8+{{charisma:modifier}} force damage to the creature that forced the saving throw</description>
+		</sheet>
+	</element>
+	<element name="Mortal Bulwark" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_WATCHERS_MORTAL_BULWARK">
+		<description>
+			<p><em>20th-level Oath of the Watchers' feature</em></p>
+			<p>You manifest a spark of divine power in defense of the mortal realms. As a bonus action, you gain the following benefits for 1 minute:</p>
+			<ul>		
+				<li>You gain truesight with a range of 120 feet.</li>
+				<li>You have advantage on attack rolls against aberrations, celestials, elementals, fey, and fiends.</li>
+				<li>When you hit a creature with an attack roll and deal damage to it, you can also force it to make a Charisma saving throw against your spell save DC. On a failed save, the creature is magically banished to its native plane of existence if it's currently not there. On a successful save, the creature can't be banished by this feature for 24 hours.</li>
+			</ul>
+			<p class="indent">Once you use this bonus action, you can't use it again until you finish a long rest, unless you expend a 5th-level spell slot to use it again.</p>
+		</description>
+		<sheet action="Bonus action" usage="1/long rest OR 5th-level spell slot">
+			<description>You gain the following features for 1 minute:
+				• You gain truesight up to 120ft
+				• You have advantage on attack rolls against aberrations, celestials, elementals, fey, and fiends.
+				• When you deal damage to a creature with an attack roll, you can force the creature to make a CHA saving throw againts a {{mortal_bulwark}} DC. On a fail the creature is banished to its native plane. On a success, the creature can't be banished again with this feature for 24h.</description>
+		</sheet>
+		<rules>
+			<stat name="mortal_bulwark" value="8" />
+			<stat name="mortal_bulwark" value="proficiency" />
+			<stat name="mortal_bulwark" value="charisma:modifier" />
+		</rules>
+	</element>
+
+<!-- Channel divinity: Oath of the Watchers -->
+	<element name="Wathcer's Will" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_CD_OATH_OF_THE_WATCHERS_WATCHERS_WILL">
+		<description>
+			<p><em>Oath of the Watchers' Channel Divinity</em></p>
+			<p>You can use your Channel Divinity to invest your presence with the warding power of your faith. As an action, you can choose a number of creatures you can see within 30 feet of you, up to a number equal to your Charisma modifier (minimum of one creature). For 1 minute, you and the chosen creatures have advantage on Intelligence, Wisdom, and Charisma saving throws.</p></description>
+		<sheet action="Action">
+			<descrpition>Use a Channel Divinity to choose up to {{watchers_will}} creatures you can see within 30 feet. For 1 minute, you and the chosen creatures gain advantage on INT, WIS adn CHA saving throw</descrpition>
+		</sheet>
+		<rules>
+			<stat name="watchers_will" value="1" bonus="base" />
+			<stat name="watchers_will" value="charisma:modifier" bonus="base" />
+		</rules>		
+	</element>
+	<element name="Abjure the Extraplanar" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_CD_OATH_OF_THE_WATCHERS_ABJURE_THE_EXTRAPLANAR">
+		<description>
+			<p><em>Oath of the Watchers' Channel Divinity</em></p>
+			<p>You can use your Channel Divinity to castigate unworldly beings. As an action, you present your holy symbol and each aberration, celestial, elemental, fey, or fiend within 30 feet of you that can hear you must make a Wisdom saving throw. On a failed save, the creature is turned for 1 minute or until it takes damage.</p></description>
+			<p class="indent">A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly end its move in a space within 30 feet of you. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can take the Dodge action.</p>
+		<sheet action="Action">
+			<description>Using a Channel Divinity and presenting the holy symbol, each aberration, celestial, elemental, fey, or fiend within 30 feet of you that can hear you must make a Wisdom saving throw or be turned for 1 minutes or until it takes damage.
+				A turned creature, must spend his turn to move as far away form you and cannot end its turn within 30 feet of you. It can only use the Dash action. If it cannot move, it can only Dodge.</description>
+		</sheet>		
+	</element>
+<!-- Sacred Oath: Oath of the Storyweavers -->
+	<element name="Oath of the Storyweavers" type="Archetype" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_PALADIN_OATH_OF_THE_STORYWEAVERS">
+		<supports>Sacred Oath</supports>
+		<description>
+			<p>The Oath of the Storyweavers binds paladins to the will of extraplanar beings that observe our realm. Thus, the Storyweavers engage in legendary aventures to entertain their patrons.</p>
+			<p class="indent">Paladins who follow the Storyweavers' oath lose attachment to this realm and begin to see the seams in its fabric. To a Storyweaver, every whim and happening is a scripted entry in the epic of their Patron's authorship.</p>			
+			<h5 class="caption">TENET OF THE STORYWEAVERS</h5>
+			<p>A paladin who assumes the Oath of the Storyweavers swears to serve as their patron's emissary in this world.</p>
+			<p class="indent"><strong>Perseverance.</strong> You believe you will succeed in the end. As a result, you are not one to surrender on your mission.</p>
+			<p class="indent"><strong>Acquiescence.</strong> You do not question the nature of your mission, even though it is a mystery to you.</p>
+			<p class="indent"><strong>Attachment.</strong> The companions you make as you work to carry out your mission can provide valuable comic relief. Your bond with them is sacred.</p>
+			<p class="indent"><strong>Showmanship.</strong> You may go overboard, but your mission requires you to be somewhat entertaining.</p>
+			<h5 class="caption">OATH OF THE STORYWEAVERS' SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Paladin Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>identify, sanctuary</em></td></tr>
+				<tr><td>5th</td><td><em>augury, detect thoughts</em></td></tr>
+				<tr><td>9th</td><td><em>blink, sending</em></td></tr>
+				<tr><td>13th</td><td><em>dimension door, hallucinatory terrain</em></td></tr>
+				<tr><td>17th</td><td><em>commune, modify memory</em></td></tr>
+			</table>
+			<div element="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_CD_OATH_OF_THE_STORYWEAVERS" />
+			<div element="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_STORYWEAVERS_THE_FOURTH_WALL" />
+			<div element="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_STORYWEAVERS_PARTIAL_SELF-AWARENESS" />
+			<div element="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_STORYWEAVERS_DIVINE_INCARNATION" />
+		</description>
+		<sheet display="false">
+			<description><p>Paladins who follow the Storyweavers' oath are bound to the will of extraplanar beings that observe our realm. Thus, the Storyweavers engage in legendary aventures to entertain their patrons.</p></description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_IDENTIFY" level="3" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SANCTUARY" level="3" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_AUGURY" level="5" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DETECT_THOUGHTS" level="5" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BLINK" level="9" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SENDING" level="9" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DIMENSION_DOOR" level="13" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HALLUCINATORY_TERRAIN" level="13" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_COMMUNE" level="17" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MODIFY_MEMORY" level="17" spellcasting="Paladin" prepared="true" />
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_CD_OATH_OF_THE_STORYWEAVERS" level="3"/>
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_STORYWEAVERS_THE_FOURTH_WALL" level="7"/>
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_STORYWEAVERS_PARTIAL_SELF-AWARENESS" level="15"/>
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_STORYWEAVERS_DIVINE_INCARNATION" level="20"/>
+		</rules>
+	</element>
+	<element name="Channel Divinity" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_CD_OATH_OF_THE_STORYWEAVERS">
+		<description>
+			<p><em>3rd-level Oath of the Storyweavers' feature</em></p>
+			<p>You gain the following Channel Divinity options. See the Sacred Oath class feature for how Channel Divinity works.</p>
+			<p class="indent"><strong>Patronal Authority:</strong> You can use your Channel Divinity to extend your Patron’s influence to other creatures. As an action, you can choose a number of creatures you can see within 30 feet of you. The chosen creatures will be compelled to carry a certain action each turn and will have to roll a Wisdom saving throw to contest it. If only one creature is chosen, it will need three total successful saving throws to be released completely. If multiply creatures are affected, a single success will suffice. All effects of this feature are terminated if another Patron-related feature or spell is used.</p>
+			<p class="indent"><strong>Scripted Theatrics:</strong>A good show needs some conflict after every victory. When you roll for an attack, you can use your channel divinity to automatically hit a creature with the attack. Alternatively, on a skill check or saving throw, you can choose to automatically succeed as if you had rolled a 20. You can apply this bonus after you roll, but before you know the result. Any time before you regain the use of this channel divinity, the DM can have you automatically fail an attack roll, skill check, or saving throw as if you had rolled a 1.</p>
+		</description>
+		<sheet>
+			<description>:</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_CD_OATH_OF_THE_STORYWEAVERS_PATRONAL_AUTHORITY" />
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_CD_OATH_OF_THE_STORYWEAVERS_SCRIPTED_THEATRICS" />
+		</rules>
+	</element>
+	<element name="The Fourth Wall" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_STORYWEAVERS_THE_FOURTH_WALL">
+		<description>
+			<p><em>7th-level Oath of the Storyweavers' feature</em></p>
+			<p>You emit a soothing aura that incites a partial disconnect from the “real” world. As you dissociate, you and any creatures of your choice within 10 feet of you roll an additional d4 when rolling wisdom, intelligence, investigation, constitution, insight, perception, and history checks or saving throws. If the d4 lands on an even number, you or the chosen creature rolls with advantage.</p>
+			<p class="indent">At 18th level, the range of this aura increases to 30 feet.</p>
+		</description>
+	</element>
+	<element name="Partial Self-Awareness" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_STORYWEAVERS_PARTIAL_SELF-AWARENESS">
+		<description>
+			<p><em>15th-level Oath of the Storyweavers' feature</em></p>
+			<p>Starting at the 15th level, your senses become more attuned to those of your “Patron.” Once per short rest, you can speak any one language you don’t already know or communicate with any one kind of creature that would otherwise not understand you, and you can choose to to roll a perception, insight, investigation, performance, persuasion, deception, constitution, or history check with advantage—or choose an equal or later turn in combat after rolling initiative. You may concede one of these benefits to a willing creature of your choice once per long rest.</p>
+		</description>
+	</element>
+	<element name="Divine Incarnation" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_STORYWEAVERS_DIVINE_INCARNATION">
+		<description>
+			<p><em>20th-level Oath of the Storyweavers' feature</em></p>
+			<p>The line between your consciousness and your “Patron’s” becomes ambiguous. As an action, you pierce the extra-dimensional veil of awareness and access the following benefits for 1 (in-game) minute—the current and following two turns:</p>
+			<ul>		
+				<li>You are aware of what is said by players and the DM.</li>
+				<li>You can read character sheets.</li>
+				<li>If you find out about a trap or a creature’s aggressive intentions ahead of time, you will be able to use a reaction or make an opportunity attack with advantage.</li>
+			</ul>
+			<p class="indent">Once you use this action, you can't use it again until you finish a long rest.</p>
+		</description>
+		<sheet action="action" usage="1/long rest">
+			<description>You gain the following features for 1 minute:
+				• You are aware of what is said by players and the DM.
+				• You can read character sheets.
+				• If you find out about a trap or a creature’s aggressive intentions ahead of time, you will be able to use a reaction or make an opportunity attack with advantage.</description>
+		</sheet>
+	</element>
+
+<!-- Channel divinity: Oath of the Storyweavers -->
+	<element name="Patronal Authority" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_CD_OATH_OF_THE_STORYWEAVERS_PATRONAL_AUTHORITY">
+		<description>
+			<p><em>Oath of the Storyweavers' Channel Divinity</em></p>
+			<p> You can use your Channel Divinity to extend your Patron’s influence to other creatures. As an action, you can choose a number of creatures you can see within 30 feet of you. The chosen creatures will be compelled to carry a certain action each turn and will have to roll a Wisdom saving throw to contest it. If only one creature is chosen, it will need three total successful saving throws to be released completely. If multiply creatures are affected, a single success will suffice. All effects of this feature are terminated if another Patron-related feature or spell is used.</p></description>
+		<sheet action="Action">
+			<description>Use a Channel Divinity to choose up to {{patronal_authority}} creatures you can see within 30 feet. The chosen creatures will be compelled to carry a certain action each turn and will have to roll a Wisdom saving throw to contest it. If only one creature is chosen, it will need three total successful saving throws to be released completely. If multiply creatures are affected, a single success will suffice. All effects of this feature are terminated if another Patron-related feature or spell is used.</description>
+		</sheet>
+		<rules>
+			<stat name="patronal_authority" value="1" bonus="base" />
+			<stat name="patronal_authority" value="charisma:modifier" bonus="base" />
+		</rules>		
+	</element>
+	<element name="Scripted Theatrics" type="Archetype Feature" source="Tasha's Cauldron of Everything" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_CD_OATH_OF_THE_STORYWEAVERS_SCRIPTED_THEATRICS">
+		<description>
+			<p><em>Oath of the Storyweavers' Channel Divinity</em></p>
+			<p>A good show needs some conflict after every victory. When you roll for an attack, you can use your channel divinity to automatically hit a creature with the attack. Alternatively, on a skill check or saving throw, you can choose to automatically succeed as if you had rolled a 20. You can apply this bonus after you roll, but before you know the result. Any time before you regain the use of this channel divinity, the DM can have you automatically fail an attack roll, skill check, or saving throw as if you had rolled a 1.</p></description>
+	</element>
+</elements>

@@ -64,9 +64,6 @@
 			<p class="indent"><strong>Patronal Authority:</strong> You can use your Channel Divinity to extend your Patron’s influence to other creatures. As an action, you can choose a number of creatures you can see within 30 feet of you. The chosen creatures will be compelled to carry a certain action each turn and will have to roll a Wisdom saving throw to contest it. If only one creature is chosen, it will need three total successful saving throws to be released completely. If multiply creatures are affected, a single success will suffice. All effects of this feature are terminated if another Patron-related feature or spell is used.</p>
 			<p class="indent"><strong>Scripted Theatrics:</strong> A good show needs some conflict after every victory. When you roll for an attack, you can use your channel divinity to automatically hit a creature with the attack. Alternatively, on a skill check or saving throw, you can choose to automatically succeed as if you had rolled a 20. You can apply this bonus after you roll, but before you know the result. Any time before you regain the use of this channel divinity, the DM can have you automatically fail an attack roll, skill check, or saving throw as if you had rolled a 1.</p>
 		</description>
-		<sheet>
-			<p>A good show needs some conflict after every victory. When you roll for an attack, you can use your channel divinity to automatically hit a creature with the attack. Alternatively, on a skill check or saving throw, you can choose to automatically succeed as if you had rolled a 20. You can apply this bonus after you roll, but before you know the result. Any time before you regain the use of this channel divinity, the DM can have you automatically fail an attack roll, skill check, or saving throw as if you had rolled a 1.</p>
-		</sheet>
 		<rules>
 			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_CD_OATH_OF_THE_STORYWEAVERS_PATRONAL_AUTHORITY" />
 			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_CD_OATH_OF_THE_STORYWEAVERS_SCRIPTED_THEATRICS" />
@@ -78,12 +75,15 @@
 			<p>You emit a soothing aura that incites a partial disconnect from the “real” world. As you dissociate, you and any creatures of your choice within 10 feet of you roll an additional d4 when rolling wisdom, intelligence, investigation, constitution, insight, perception, and history checks or saving throws. If the d4 lands on an even number, you or the chosen creature rolls with advantage.</p>
 			<p class="indent">At 18th level, the range of this aura increases to 30 feet.</p>
 		</description>
+		<sheet><description><p>You emit a soothing aura that incites a partial disconnect from the “real” world. As you dissociate, you and any creatures of your choice within 10 feet of you roll an additional d4 when rolling wisdom, intelligence, investigation, constitution, insight, perception, and history checks or saving throws. If the d4 lands on an even number, you or the chosen creature rolls with advantage.</p>
+			<p class="indent">At 18th level, the range of this aura increases to 30 feet.</p></description></sheet>
 	</element>
 	<element name="Partial Self-Awareness" type="Archetype Feature" source="Homebrew" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_STORYWEAVERS_PARTIAL_SELF-AWARENESS">
 		<description>
 			<p><em>15th-level Oath of the Storyweavers' feature</em></p>
 			<p>Starting at the 15th level, your senses become more attuned to those of your “Patron.” Once per short rest, you can speak any one language you don’t already know or communicate with any one kind of creature that would otherwise not understand you, and you can choose to to roll a perception, insight, investigation, performance, persuasion, deception, constitution, or history check with advantage—or choose an equal or later turn in combat after rolling initiative. You may concede one of these benefits to a willing creature of your choice once per long rest.</p>
 		</description>
+		<sheet action="bonus action">Starting at the 15th level, your senses become more attuned to those of your “Patron.” Once per short rest, you can speak any one language you don’t already know or communicate with any one kind of creature that would otherwise not understand you, and you can choose to to roll a perception, insight, investigation, performance, persuasion, deception, constitution, or history check with advantage—or choose an equal or later turn in combat after rolling initiative. You may concede one of these benefits to a willing creature of your choice once per long rest.<description><p></p></description></sheet>
 	</element>
 	<element name="Divine Incarnation" type="Archetype Feature" source="Homebrew" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_STORYWEAVERS_DIVINE_INCARNATION">
 		<description>
@@ -131,5 +131,16 @@
 		<sheet>
 			<description><p>You have blindsight with a range of 10 feet. Within that range, you can effectively see anything that isn't behind total cover, even if you're blinded or in darkness. Moreover, you can see an invisible creature within that range, unless the creature successfully hides from you.</p></description>
 		</sheet>
+	</element>
+	<element name="steampunk_deity69" type="Deity" source="Homebrew" id="ID_HOMEBREW_DEITY_STEAMPUNK_DEITY69">
+		<description>
+			<p>Outer God</p>
+		</description>
+		<setters>
+			<set name="setting">N/A</set>
+			<set name="alignment">CG</set>
+			<set name="domains">The Veil</set>
+			<set name="symbol">Letter V</set>
+		</setters>
 	</element>
 </elements>

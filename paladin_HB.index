@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Paladin Sacred Oaths from Homebrew</name>
+		<description>The new Sacred Oath for Paladin class from Homebrew</description>
+		<author url="https://dnd.wizards.com/it/products/tashas-cauldron-everything">User</author>
+		<update version="0.0.0">
+			<file name="paladin_HB.index" url="https://absent/" />
+		</update>
+	</info>
+	
+<!-- Sacred Oath: Oath of the Storyweavers -->
+	<element name="Oath of the Storyweavers" type="Archetype" source="Homebrew" id="ID_WOTC_TCE_ARCHETYPE_PALADIN_OATH_OF_THE_STORYWEAVERS">
+		<supports>Sacred Oath</supports>
+		<description>
+			<p>The Oath of the Storyweavers binds paladins to the will of extraplanar beings that observe our realm. Thus, the Storyweavers engage in legendary aventures to entertain their patrons.</p>
+			<p class="indent">Paladins who follow the Storyweavers' oath lose attachment to this realm and begin to see the seams in its fabric. To a Storyweaver, every whim and happening is a scripted entry in the epic of their Patron's authorship.</p>			
+			<h5 class="caption">TENET OF THE STORYWEAVERS</h5>
+			<p>A paladin who assumes the Oath of the Storyweavers swears to serve as their patron's emissary in this world.</p>
+			<p class="indent"><strong>Perseverance.</strong> You believe you will succeed in the end. As a result, you are not one to surrender on your mission.</p>
+			<p class="indent"><strong>Acquiescence.</strong> You do not question the nature of your mission, even though it is a mystery to you.</p>
+			<p class="indent"><strong>Attachment.</strong> The companions you make as you work to carry out your mission can provide valuable comic relief. Your bond with them is sacred.</p>
+			<p class="indent"><strong>Showmanship.</strong> You may go overboard, but your mission requires you to be somewhat entertaining.</p>
+			<h5 class="caption">OATH OF THE STORYWEAVERS' SPELLS</h5>
+			<table>
+				<thead>
+					<tr><td>Paladin Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd</td><td><em>identify, sanctuary</em></td></tr>
+				<tr><td>5th</td><td><em>augury, detect thoughts</em></td></tr>
+				<tr><td>9th</td><td><em>blink, sending</em></td></tr>
+				<tr><td>13th</td><td><em>dimension door, hallucinatory terrain</em></td></tr>
+				<tr><td>17th</td><td><em>commune, modify memory</em></td></tr>
+			</table>
+			<div element="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_CD_OATH_OF_THE_STORYWEAVERS" />
+			<div element="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_STORYWEAVERS_THE_FOURTH_WALL" />
+			<div element="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_STORYWEAVERS_PARTIAL_SELF-AWARENESS" />
+			<div element="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_STORYWEAVERS_DIVINE_INCARNATION" />
+		</description>
+		<sheet display="false">
+			<description><p>Paladins who follow the Storyweavers' oath are bound to the will of extraplanar beings that observe our realm. Thus, the Storyweavers engage in legendary aventures to entertain their patrons.</p></description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_IDENTIFY" level="3" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SANCTUARY" level="3" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_AUGURY" level="5" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DETECT_THOUGHTS" level="5" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_BLINK" level="9" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_SENDING" level="9" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_DIMENSION_DOOR" level="13" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_HALLUCINATORY_TERRAIN" level="13" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_COMMUNE" level="17" spellcasting="Paladin" prepared="true" />
+			<grant type="Spell" id="ID_PHB_SPELL_MODIFY_MEMORY" level="17" spellcasting="Paladin" prepared="true" />
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_CD_OATH_OF_THE_STORYWEAVERS" level="3"/>
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_STORYWEAVERS_THE_FOURTH_WALL" level="7"/>
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_STORYWEAVERS_PARTIAL_SELF-AWARENESS" level="15"/>
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_STORYWEAVERS_DIVINE_INCARNATION" level="20"/>
+		</rules>
+	</element>
+	<element name="Channel Divinity" type="Archetype Feature" source="Homebrew" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_CD_OATH_OF_THE_STORYWEAVERS">
+		<description>
+			<p><em>3rd-level Oath of the Storyweavers' feature</em></p>
+			<p>You gain the following Channel Divinity options. See the Sacred Oath class feature for how Channel Divinity works.</p>
+			<p class="indent"><strong>Patronal Authority:</strong> You can use your Channel Divinity to extend your Patron’s influence to other creatures. As an action, you can choose a number of creatures you can see within 30 feet of you. The chosen creatures will be compelled to carry a certain action each turn and will have to roll a Wisdom saving throw to contest it. If only one creature is chosen, it will need three total successful saving throws to be released completely. If multiply creatures are affected, a single success will suffice. All effects of this feature are terminated if another Patron-related feature or spell is used.</p>
+			<p class="indent"><strong>Scripted Theatrics:</strong> A good show needs some conflict after every victory. When you roll for an attack, you can use your channel divinity to automatically hit a creature with the attack. Alternatively, on a skill check or saving throw, you can choose to automatically succeed as if you had rolled a 20. You can apply this bonus after you roll, but before you know the result. Any time before you regain the use of this channel divinity, the DM can have you automatically fail an attack roll, skill check, or saving throw as if you had rolled a 1.</p>
+		</description>
+		<sheet>
+			<p>A good show needs some conflict after every victory. When you roll for an attack, you can use your channel divinity to automatically hit a creature with the attack. Alternatively, on a skill check or saving throw, you can choose to automatically succeed as if you had rolled a 20. You can apply this bonus after you roll, but before you know the result. Any time before you regain the use of this channel divinity, the DM can have you automatically fail an attack roll, skill check, or saving throw as if you had rolled a 1.</p>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_CD_OATH_OF_THE_STORYWEAVERS_PATRONAL_AUTHORITY" />
+			<grant type="Archetype Feature" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_CD_OATH_OF_THE_STORYWEAVERS_SCRIPTED_THEATRICS" />
+		</rules>
+	</element>
+	<element name="The Fourth Wall" type="Archetype Feature" source="Homebrew" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_STORYWEAVERS_THE_FOURTH_WALL">
+		<description>
+			<p><em>7th-level Oath of the Storyweavers' feature</em></p>
+			<p>You emit a soothing aura that incites a partial disconnect from the “real” world. As you dissociate, you and any creatures of your choice within 10 feet of you roll an additional d4 when rolling wisdom, intelligence, investigation, constitution, insight, perception, and history checks or saving throws. If the d4 lands on an even number, you or the chosen creature rolls with advantage.</p>
+			<p class="indent">At 18th level, the range of this aura increases to 30 feet.</p>
+		</description>
+	</element>
+	<element name="Partial Self-Awareness" type="Archetype Feature" source="Homebrew" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_STORYWEAVERS_PARTIAL_SELF-AWARENESS">
+		<description>
+			<p><em>15th-level Oath of the Storyweavers' feature</em></p>
+			<p>Starting at the 15th level, your senses become more attuned to those of your “Patron.” Once per short rest, you can speak any one language you don’t already know or communicate with any one kind of creature that would otherwise not understand you, and you can choose to to roll a perception, insight, investigation, performance, persuasion, deception, constitution, or history check with advantage—or choose an equal or later turn in combat after rolling initiative. You may concede one of these benefits to a willing creature of your choice once per long rest.</p>
+		</description>
+	</element>
+	<element name="Divine Incarnation" type="Archetype Feature" source="Homebrew" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_OATH_OF_THE_STORYWEAVERS_DIVINE_INCARNATION">
+		<description>
+			<p><em>20th-level Oath of the Storyweavers' feature</em></p>
+			<p>The line between your consciousness and your “Patron’s” becomes ambiguous. As an action, you pierce the extra-dimensional veil of awareness and access the following benefits for 1 (in-game) minute—the current and following two turns:</p>
+			<ul>		
+				<li>You are aware of what is said by players and the DM.</li>
+				<li>You can read character sheets.</li>
+				<li>If you find out about a trap or a creature’s aggressive intentions ahead of time, you will be able to use a reaction or make an opportunity attack with advantage.</li>
+			</ul>
+			<p class="indent">Once you use this action, you can't use it again until you finish a long rest.</p>
+		</description>
+		<sheet action="action" usage="1/long rest">
+			<description>You gain the following features for 1 minute:
+				• You are aware of what is said by players and the DM.
+				• You can read character sheets.
+				• If you find out about a trap or a creature’s aggressive intentions ahead of time, you will be able to use a reaction or make an opportunity attack with advantage.</description>
+		</sheet>
+	</element>
+
+<!-- Channel divinity: Oath of the Storyweavers -->
+	<element name="Patronal Authority" type="Archetype Feature" source="Homebrew" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_CD_OATH_OF_THE_STORYWEAVERS_PATRONAL_AUTHORITY">
+		<description>
+			<p><em>Oath of the Storyweavers' Channel Divinity</em></p>
+			<p> You can use your Channel Divinity to extend your Patron’s influence to other creatures. As an action, you can choose a number of creatures you can see within 30 feet of you. The chosen creatures will be compelled to carry a certain action each turn and will have to roll a Wisdom saving throw to contest it. If only one creature is chosen, it will need three total successful saving throws to be released completely. If multiply creatures are affected, a single success will suffice. All effects of this feature are terminated if another Patron-related feature or spell is used.</p></description>
+		<sheet action="Action">
+			<description>Use a Channel Divinity to choose up to {{patronal_authority}} creatures you can see within 30 feet. The chosen creatures will be compelled to carry a certain action each turn and will have to roll a Wisdom saving throw to contest it. If only one creature is chosen, it will need three total successful saving throws to be released completely. If multiply creatures are affected, a single success will suffice. All effects of this feature are terminated if another Patron-related feature or spell is used.</description>
+		</sheet>
+		<rules>
+			<stat name="patronal_authority" value="1" bonus="base" />
+			<stat name="patronal_authority" value="charisma:modifier" bonus="base" />
+		</rules>		
+	</element>
+	<element name="Scripted Theatrics" type="Archetype Feature" source="Homebrew" id="ID_WOTC_TCE_ARCHETYPE_FEATURE_PALADIN_CD_OATH_OF_THE_STORYWEAVERS_SCRIPTED_THEATRICS">
+		<description>
+			<p><em>Oath of the Storyweavers' Channel Divinity</em></p>
+			<p>A good show needs some conflict after every victory. When you roll for an attack, you can use your channel divinity to automatically hit a creature with the attack. Alternatively, on a skill check or saving throw, you can choose to automatically succeed as if you had rolled a 20. You can apply this bonus after you roll, but before you know the result. Any time before you regain the use of this channel divinity, the DM can have you automatically fail an attack roll, skill check, or saving throw as if you had rolled a 1.</p></description>
+		<sheet><description><p>A good show needs some conflict after every victory. When you roll for an attack, you can use your channel divinity to automatically hit a creature with the attack. Alternatively, on a skill check or saving throw, you can choose to automatically succeed as if you had rolled a 20. You can apply this bonus after you roll, but before you know the result. Any time before you regain the use of this channel divinity, the DM can have you automatically fail an attack roll, skill check, or saving throw as if you had rolled a 1.</p></description></sheet>
+	</element>
+	<element name="Blind Fighting" type="Class Feature" source="Homebrew" id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_BLIND_FIGHTING">
+		<supports>Fighting Style, Fighter, Paladin</supports>
+		<description>
+			<p>You have blindsight with a range of 10 feet. Within that range, you can effectively see anything that isn't behind total cover, even if you're blinded or in darkness. Moreover, you can see an invisible creature within that range, unless the creature successfully hides from you.</p>
+		</description>
+		<sheet>
+			<description><p>You have blindsight with a range of 10 feet. Within that range, you can effectively see anything that isn't behind total cover, even if you're blinded or in darkness. Moreover, you can see an invisible creature within that range, unless the creature successfully hides from you.</p></description>
+		</sheet>
+	</element>
+</elements>

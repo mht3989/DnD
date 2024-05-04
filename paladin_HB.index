@@ -5,7 +5,7 @@
 		<description>The new Sacred Oath for Paladin class from Homebrew</description>
 		<author url="https://dnd.wizards.com/it/products/tashas-cauldron-everything">User</author>
 		<update version="0.0.0">
-			<file name="paladin_HB.index" url="https://absent/" />
+			<file name="paladin_HB.index" url="https://raw.githubusercontent.com/mht3989/DnD/main/paladin_HB.index" />
 		</update>
 	</info>
 	
